@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding: 10px;
+  height: 150px;
+}
+.middle, .right {
+  width: 25%;
+}
+.left {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top{
+    text-align: center;
+  border: 3px solid green;
+  margin-left: auto; margin-right: auto;
+}
+</style>
+</head>
+<body>
+<div text-align: center class="top" style="background-color: floralwhite;" >
+<h2 style="font-size:20px;">Welcome to the BBC</h2>
+<p style="font-size:15px;">DEC 25 2006<p>
+</div>    
+<div class="row">
+  <div class="column left" style="background-color:powderblue;">
+  <img src="C:\Users\HP\OneDrive\Pictures\Saved Pictures\photo_2020-07-16_15-26-28.jpg" alt="HTML5 Icon" style="width:250px;height:128px;" class="center">
+
+    <h2>England chase 284 against South Africa</h2>
+    <p>expansion....</p>
+  </div>
+  <div class="column middle" style="background-color:gray;">
+  <img src="C:\Users\HP\OneDrive\Pictures\Saved Pictures\photo_2020-07-16_15-26-29 (2).jpg" alt="HTML5 Icon" style="width:250px;height:128px;" class="center">
+    <h2>NASA Adds More Safety Fixes for Boeing's Starliner Crew Capsule</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column right" style="background-color:coral;">
+  <img src="C:\Users\HP\OneDrive\Pictures\Saved Pictures\photo_2020-07-16_15-26-29.jpg" alt="HTML5 Icon" style="width:250px;height:128px;" class="center">
+
+    <h2>Ancient Mayan palace discovered in Mexico</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+
+</body>
+</html>
